@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- 定义一个用于显示头像的ImageView -->
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:baselineAlignBottom="true"
+        android:paddingLeft="8dp" />
+
+    <!-- 定义一个竖直方向的LinearLayout,把姓名与学号的文本框设置出来 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_sName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="8dp"
+            android:textColor="#1D1D1C"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txt_sNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="8px"
+            android:textColor="#B4B4B9"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

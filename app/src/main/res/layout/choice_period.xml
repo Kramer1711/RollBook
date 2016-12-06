@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhoushu"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="130dp"
+        android:text="周数:"
+        android:textSize="30dp"/>
+    <Spinner
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinner_week"
+        android:entries="@array/weeks"
+        android:scrollbarSize="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_toRightOf="@id/zhoushu"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/keshi"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/zhoushu"
+        android:text="课时:"
+        android:textSize="30dp"/>
+
+    <Spinner
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinner_period"
+        android:entries="@array/periods"
+        android:scrollbarSize="30dp"
+        android:layout_below="@id/spinner_week"
+        android:layout_toRightOf="@id/keshi"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/start_roll"
+        android:layout_marginTop="105dp"
+        android:text="开始点名"
+        android:textSize="30dp"
+        android:layout_below="@+id/spinner_period"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

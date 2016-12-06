@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#616152"
+        android:id="@+id/back">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/icon_roll"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_toRightOf="@id/icon_roll"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:text="邱凯"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_toRightOf="@id/icon_roll"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="631406010210"
+        android:textSize="20dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/back"
+        android:background="#584434">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nothing"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/button1"
+            android:layout_toLeftOf="@id/nothing"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:text="出勤"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/button2"
+            android:layout_toRightOf="@id/nothing"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+
+            android:text="迟到"
+            android:textSize="30dp"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/button4"
+            android:layout_below="@id/button2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/nothing"
+            android:text="旷课"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/button3"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/button1"
+            android:layout_toLeftOf="@id/nothing"
+            android:text="请假"
+            android:textSize="30dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

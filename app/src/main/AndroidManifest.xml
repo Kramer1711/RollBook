@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kramer.rollbook3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_roll"
+        android:label="点名册"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="点名册"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddStudent"
+            android:label="添加学生"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Detail"
+            android:label="学生详情"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".EditDetail"
+            android:label="修改学生信息"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ChoicePeriod"
+            android:label="选择课时"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".RollFirst"
+            android:label="记录考勤情况"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".RollNext"
+            android:label="记录考勤情况"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+    </application>
+
+</manifest>

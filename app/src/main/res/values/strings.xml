@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RollBook3</string>
+    <string name="action_settings">点名</string>
+    <string name="attendance_situation">
+        <item>出勤</item>
+        <item>旷课</item>
+        <item>请假</item>
+        <item>迟到</item>
+    </string>
+</resources>
