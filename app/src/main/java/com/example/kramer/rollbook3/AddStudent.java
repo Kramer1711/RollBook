@@ -96,17 +96,16 @@ public class AddStudent extends Activity implements View.OnClickListener{
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    public byte[] getImg(){                 //将图片转化为BLOB
-        //Bitmap bitmap1= BitmapFactory.decodeResource(getResources(), R.drawable.pika);            //将文件里的图片转化为Bitmap
-        Bitmap bitmap1=drawableToBitmap(icon.getDrawable());
-        int size=bitmap1.getWidth()*bitmap1.getHeight()*4;
-        ByteArrayOutputStream baos=new ByteArrayOutputStream(size);
+    public byte[] getImg(){                 //将图片转化为二进制数据保存
+        //将ImageView里的图片转化为Bitmap
+        Bitmap bitmap1 = drawableToBitmap(icon.getDrawable());
+        int size = bitmap1.getWidth()*bitmap1.getHeight()*4;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream(size);
         bitmap1.compress(Bitmap.CompressFormat.PNG, 100, baos);
         return baos.toByteArray();
     }
 
     public Bitmap drawableToBitmap(Drawable drawable) {              // drawable 转换成bitmap
-
         int width = drawable.getIntrinsicWidth();                   // 取drawable的长宽
         int height = drawable.getIntrinsicHeight();
         Bitmap.Config config = drawable.getOpacity()

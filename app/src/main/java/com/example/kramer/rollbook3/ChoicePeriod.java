@@ -14,7 +14,7 @@ import android.widget.Spinner;
 
 public class ChoicePeriod extends AppCompatActivity{
 
-    int weeks = 0,periods = 0,time = 0;
+    int weeks = 0,periods = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -49,7 +49,6 @@ public class ChoicePeriod extends AppCompatActivity{
                 Bundle bd = new Bundle();
                 bd.putInt("week",weeks);
                 bd.putInt("period",periods);
-                bd.putInt("time",time);
                 intent.putExtras(bd);
                 startActivity(intent);
             }
